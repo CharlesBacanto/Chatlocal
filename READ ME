@@ -1,0 +1,21 @@
+python Steps for Devs
+1. Install pyhton3 "https://www.python.org/downloads/" and make sure upon installation it is added to path.
+2. Creating working environment by prompting the following on the terminal "python3 -m venv brahmmychat_venv"
+then "source brahmmychat_venv/bin/activate" for os 
+Or "python -m venv brahmmychat_venv" then ".\brahmmychat_venv\Scripts\Activate" for windows.
+3. After successfully creating a virtual environment, prompt the ff. "pip install --upgrade pip" or ".\brahmmychat_venv\Scripts\python.exe -m pip install --upgrade pip" for windows
+4. Next, "pip install -r requirements.txt"
+5. streamlit run app.py
+6. Download hugging face 
+small: "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q3_K_M.gguf"
+large: "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q5_K_M.gguf"
+7. embeddings_path: "https://huggingface.co/BAAI/bge-large-en-v1.5"
+
+
+    if chat_history.messages != []:
+        with chat_container:
+            st.write("Chat History:")
+            for message in chat_history.messages:
+                st.chat_message(message.type).write(message.content)
+
+                 LangChain 0.1.0 LangChain 0.1.0
