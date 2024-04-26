@@ -1,0 +1,16 @@
+For Offline Chatbot:
+Access text file in ollama for download link or run ollama.exe
+windows+r then cmd 
+Prompt "ollama run mistral"
+"/bye" to close
+In VS code open the project folder and open a new terminal
+Type ollama create Brahmmy -f +("relative path of brahmmy file") for example:
+	ollama create Brahmmy -f Brahmmy
+
+Create a virtual environment python -m venv brahmmy
+ Pip install requirements .txt
+
+
+
+
+
